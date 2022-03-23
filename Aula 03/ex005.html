@@ -6,7 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+    <style>
+        body{
+            font: normal 20pt arial;
+        
+        }
+
+    </style>
 <body>
-    
+    <script>
+        var nome = window.prompt('Qual teu nome?')
+        var n1 = Number(window.prompt('Qual teu número favorito?'))
+        var n2 = Number(window.prompt('Qual teu segundo número favorito?'))
+        var n3 = n1 / n2
+        var n4 = n1 * n2
+
+        document.write(`Olá, <strong>${nome}!</strong> seu nome tem ${nome.length} letras <br/>`)
+        document.write(`Seu nome em letras maiúsculas fica da seguinte forma ${nome.toUpperCase()} <br/>`)
+        document.write(`Seu nome em letras minúsculas fica da seguinte forma ${nome.toLowerCase()} <br/>`)
+
+        document.write(`<br/>`)
+
+        document.write(`Operações com os teus números favoritos <strong>${nome}</strong> <br/>`)
+        document.write(`<br/>`)
+        document.write(`A soma dos teus números é igual a ${n1+n2} <br/>`)
+        document.write(`A multiplicação do teu primeiro número pelo segundo é igual a ${n1*n2} <br/>`)
+        document.write(`E a divisão do teu primeiro número pelo segundo é igual a ${n1/n2.toFixed(1)} <br/>`)
+    </script>
 </body>
 </html>
