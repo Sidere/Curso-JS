@@ -17,14 +17,18 @@
     <h1>Iniciando estudos com DOM</h1>
     <p> Aqui vai o resultado</p>
     <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
-    <div>Clique em mim</div>
+    <div id="msg">Clique em mim</div>
     <script>
         var corpo = window.document.body
         var p1 = window.document.getElementsByTagName(`p`)[1]
         /*window.document.write(`Está escrito assim: ` + p1.innerText)*/
         /*corpo.style.background = `Black` comando para altera a cor do background a partir da var CORPO
         p1.style.color = 'blue' COR DO PARAGRÁFO A PARTIR DA VARIÁVEL P1 */
-        
+        var d = window.document.getElementById('msg')
+        /* O que é innerText*/
+        d.style.background = 'black'
+        d.innerHTML = 'Estou aguardando'
+
         
         
     </script>    
