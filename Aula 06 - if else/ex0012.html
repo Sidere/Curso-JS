@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Sistema de Nacionalidades</h1>
+    Nacionalidade: <input type="text" name="pais" id="pais">
+    <input type="button" value="Verificar" onclick="processar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function processar(){
+            var res = window.document.querySelector('div#res')
+            var paisc = window.document.querySelector('input#pais')
+            res.innerHTML = `<p> O país que você mora atualmente é o <strong>${paisc}</strong></p>`
+            if(paisc ==! 'Brasil'){
+                res.innerHTML += `<p>Você é Estrangeiro</p>`
+            } else {
+                res.innerHTML += `<p>Você é Brasileiro</p>`
+            }
+        }
+    </script>
+</body>
+</html>
