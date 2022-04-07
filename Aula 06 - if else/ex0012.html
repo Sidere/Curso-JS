@@ -16,12 +16,12 @@
     <script>
         function processar(){
             var res = window.document.querySelector('div#res')
-            var paisc = window.document.querySelector('input#pais')
-            res.innerHTML = `<p> O país que você mora atualmente é o <strong>${paisc}</strong></p>`
-            if(paisc ==! 'Brasil'){
-                res.innerHTML += `<p>Você é Estrangeiro</p>`
-            } else {
+            var nasc = window.document.querySelector('input#pais')
+            res.innerHTML = `<p> O país que você mora atualmente é o <strong>${nasc.value}</strong></p>`
+            if(nasc.value == 'Brasil'){
                 res.innerHTML += `<p>Você é Brasileiro</p>`
+            } else {
+                res.innerHTML += `<p> Você é Estrangeiro</p>`
             }
         }
     </script>
